@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+        width: 500px;
+        border-collapse: collapse;
+        position: relative;
+    }
+
+    caption {
+        font-size: 1.5em;
+        padding: 10px;
+        background-color: darkgray;
+        font-weight: bold;
+    }
+
+    tbody > tr:nth-child(2n){
+        background-color: darkgray;
+    }
+
+    td, th {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    thead {
+        background-color: rgba(0, 0, 0, 0.842);
+        color: aliceblue;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: rgba(0, 0, 0, 0.842);
+    }
+    
+    tfoot {
+        background-color: darkgray;
+    }
+
+    td.num {
+        text-align: right;
+    }
+</style>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Anatomia de tabelas grandes
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">9 049 856</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 968 222</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>72.937.127</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
