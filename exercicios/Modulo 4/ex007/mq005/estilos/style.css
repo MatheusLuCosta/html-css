@@ -49,6 +49,8 @@ menu > ul > li > a {
     background-color: rgb(87, 87, 87);
     color: white;
     border-top: 2px solid rgba(0, 0, 0, 0.432);
+    transition-duration: .5s;
+
 }
 
 menu > ul > li > a:hover {
